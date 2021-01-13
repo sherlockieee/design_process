@@ -50,6 +50,7 @@ nav header {
   font-weight: semibold;
   border-bottom: none;
 }
+
 a {
   text-decoration: none;
   color: #081d94;
@@ -58,7 +59,7 @@ a {
 
 img {
   max-width: 80%;
-  min-width: 300px;
+  min-width: 200px;
   height: auto;
   margin: 20px auto 20px auto;
   display: block;
@@ -67,12 +68,15 @@ img {
 
 code {
   display: block;
-  white-space: pre-wrap;
+  width: 40%;
+  min-width: 200px;
+  white-space: wrap;
   background-color: rgb(231, 230, 230);
   font-family: monospace;
   margin: 0 auto 0 auto;
+  padding: 20px;
   line-height: 1em;
-  padding: 5px;
+  text-align: left;
 }
 
 ul li {
@@ -94,6 +98,8 @@ figcaption {
   text-align: center;
   font-size: 0.8em;
   line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
 blockquote {
@@ -113,9 +119,13 @@ p {
 #figma {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+#figma img {
+  max-width: 80%;
+  margin: 5px auto;
 }
 
 #resources {
@@ -131,6 +141,9 @@ p {
 
 @media (max-width: 700px) {
   #resources {
+    display: block;
+  }
+  #figma {
     display: block;
   }
 }
